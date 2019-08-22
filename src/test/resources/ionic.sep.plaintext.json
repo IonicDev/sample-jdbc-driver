@@ -1,0 +1,13 @@
+{
+  "activeDeviceId": "",
+  "profiles": [
+    {
+      "name": "",
+      "deviceId": "",
+      "server": "",
+      "aesCdIdcKey": "",
+      "aesCdEiKey": "",
+      "creationTimestamp": 0
+    }
+  ]
+}

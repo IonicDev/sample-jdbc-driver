@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE properties SYSTEM 'http://java.sun.com/dtd/properties.dtd'>
+<properties>
+    <entry key='driverClassName'>org.postgresql.Driver</entry>
+    <entry key='jdbc.url'>jdbc:postgresql://localhost:5432/</entry>
+    <entry key='jdbc.user'>postgres</entry>
+    <entry key='jdbc.password'>password-postgres</entry>
+
+    <entry key='ionic.sep'>ionic.sep.plaintext.json</entry>
+    <entry key='ionic.config'>ionic.config.jdbc.json</entry>
+
+    <entry key='sql.insert.insecure'>INSERT INTO personnelinsecure (first, last, zip, department) VALUES (?, ?, ?, ?)</entry>
+    <entry key='sql.create.insecure'>INSERT INTO personnelinsecure (first, last, zip, department) VALUES (?, ?, ?, ?) RETURNING id</entry>
+    <entry key='sql.update.insecure'>UPDATE personnelinsecure SET last = ? WHERE ID = ?</entry>
+
+    <entry key='sql.insert.ionic'>INSERT INTO personnel (first, last, zip, department) VALUES (?, ?, ?, ?)</entry>
+    <entry key='sql.create.ionic'>INSERT INTO personnel (first, last, zip, department) VALUES (?, ?, ?, ?) RETURNING id</entry>
+    <entry key='sql.update.ionic'>UPDATE personnel SET last = ? WHERE ID = ?</entry>
+</properties>

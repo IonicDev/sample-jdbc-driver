@@ -1,0 +1,70 @@
+{
+  "PreparedStatement": {
+    "INSERT INTO personnel (first, last, zip, department) VALUES (?, ?, ?, ?)": {
+      "IonicColumns": {
+        "1": {
+          "cattrs": {
+            "classification": [
+              "pii",
+              "first"
+            ]
+          }
+        },
+        "2": {
+          "cattrs": {
+            "classification": [
+              "pii",
+              "last"
+            ]
+          }
+        },
+        "3": {
+          "cattrs": {
+            "classification": [
+              "zip"
+            ]
+          }
+        }
+      }
+    },
+    "INSERT INTO personnel (first, last, zip, department) VALUES (?, ?, ?, ?) RETURNING id": {
+      "IonicColumns": {
+        "1": {
+          "cattrs": {
+            "classification": [
+              "pii",
+              "first"
+            ]
+          }
+        },
+        "2": {
+          "cattrs": {
+            "classification": [
+              "pii",
+              "last"
+            ]
+          }
+        },
+        "3": {
+          "cattrs": {
+            "classification": [
+              "zip"
+            ]
+          }
+        }
+      }
+    },
+    "UPDATE personnel SET last = ? WHERE ID = ?": {
+      "IonicColumns": {
+        "1": {
+          "cattrs": {
+            "classification": [
+              "pii",
+              "last"
+            ]
+          }
+        }
+      }
+    }
+  }
+}
